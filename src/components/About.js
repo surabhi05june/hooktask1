@@ -1,7 +1,16 @@
-import React from "react";
+import React,{useState} from "react";
 function About(){
-  
-    return <h1>About Us</h1>;
+  const [data, setdata] = useState("")
+    
+  return (
+    <>
+   <button onClick = {()=>setdata (data => (data = "hello worls")) }>click to </button>
+  <h1 >
+{data}
+  </h1>
+  </>);
+
   
 }
+
 export default About;
